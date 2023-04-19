@@ -53,7 +53,7 @@
                         </li>
                        
                         <li class="text-center p-20 upgrade-btn">
-                            <a href="index.php"
+                            <a href="logout.php"
                                 class="btn d-grid btn-danger text-white">
                                 Cerrar Sesión</a>
                         </li>

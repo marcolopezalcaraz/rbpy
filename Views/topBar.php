@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <body>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
