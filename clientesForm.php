@@ -64,21 +64,15 @@ require 'Views/sideBar.php';
                                           <label for="direccion">Telefono:</label>
                                           <input type="text" class="form-control" id="phone" name="phone">
                                         </div>
-                                        <div class="form-group">
-                                          <label for="telefono">Teléfono Alt:</label>
-                                          <input type="text" class="form-control" id="phone1" name="phone1">
-                                        </div>
+                                        
                                         <div class="form-group">
                                           <label for="email">Email:</label>
                                           <input type="text" class="form-control" id="email" name="email">
                                         </div>
+                                        
                                         <div class="form-group">
-                                          <label for="email1">Email Alt:</label>
-                                          <input type="text" class="form-control" id="email1" name="email1">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="city_id">Ciudad:</label>
-                                          <input type="text" class="form-control" id="city_id" name="city_id">
+                                          <label for="city">Ciudad:</label>
+                                          <input type="text" class="form-control" id="city" name="city">
                                         </div>
                                         <div class="form-group">
                                           <label for="address">Dirección:</label>
@@ -86,20 +80,17 @@ require 'Views/sideBar.php';
                                         </div>
                                         
                                         <div class="form-group">
-                                          <label for="tipo_id">Tipo:</label>
-                                          <input type="text" class="form-control" id="tipo_id" name="tipo_id">
+                                          <label for="contacto">Contacto:</label>
+                                          <input type="text" class="form-control" id="contacto" name="contacto">
                                         </div>
                                         <div class="form-group">
-                                          <label for="ramo_id">Ramo:</label>
-                                          <input type="text" class="form-control" id="ramo_id" name="ramo_id">
+                                          <label for="gerente">Gerente:</label>
+                                          <input type="text" class="form-control" id="gerente" name="gerente">
                                         </div>
+                                   
                                         <div class="form-group">
-                                          <label for="user">Agregado por:</label>
-                                          <input type="text" class="form-control" id="user_id" name="user_id">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="status">Estado:</label>
-                                          <input type="text" class="form-control" id="status" name="status">
+                                          <label for="estado">Estado:</label>
+                                          <input type="text" class="form-control" id="estado" name="estado">
                                         </div>
                                         <button type="submit" class="btn btn-success">Agregar</button>
                                         <button type="submit" class="btn btn-primary">Editar</button>

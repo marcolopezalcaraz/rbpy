@@ -1,4 +1,5 @@
 <?php
+
 require 'Views/head.php';
 require 'Views/topBar.php';
 require 'Views/sideBar.php';

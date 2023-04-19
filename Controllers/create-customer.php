@@ -4,21 +4,19 @@ require '../config.php';
 $ruc = $_POST['ruc'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$phone1 = $_POST['phone1'];
 $email = $_POST['email'];
-$email1 = $_POST['email1'];
-$city_id = $_POST['city_id'];
+$city = $_POST['city'];
 $address = $_POST['address'];
-$tipo_id = $_POST['tipo_id'];
-$ramo_id = $_POST['ramo_id'];
-$user_id = $_POST['user_id'];
-$status = $_POST['status'];
+$contacto = $_POST['contacto'];
+$gerente = $_POST['gerente'];
+$estado = $_POST['estado'];
+
 
 $conexion = mysqli_connect("192.168.0.10", "root", "kakokeko", "rbpy");
 
 // Insertar los datos en la tabla
-$sql = "INSERT INTO rb_customer (ruc, name, phone, phone1, email, email1, city_id, address, tipo_id, ramo_id, user_id, status)
-        VALUES ('$ruc', '$name', '$phone', '$phone1', '$email', '$email1', '$city_id', '$address', '$tipo_id', '$ramo_id', '$user_id', '$status')";
+$sql = "INSERT INTO rb_clientes (ruc, name, phone, email, city, address, contacto, gerente, estado)
+        VALUES ('$ruc', '$name', '$phone', '$email', '$city', '$address', '$contacto', '$gerente', '$estado')";
 mysqli_query($conexion, $sql);
 
 
