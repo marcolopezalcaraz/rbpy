@@ -53,9 +53,9 @@
                         </li>
                        
                         <li class="text-center p-20 upgrade-btn">
-                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
-                                class="btn d-grid btn-danger text-white" target="_blank">
-                                Soy un boton</a>
+                            <a href="index.php"
+                                class="btn d-grid btn-danger text-white">
+                                Cerrar Sesión</a>
                         </li>
                     </ul>
 

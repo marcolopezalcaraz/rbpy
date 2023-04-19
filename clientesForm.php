@@ -39,37 +39,67 @@ require 'Views/sideBar.php';
 
                      <!-- AQUI DEBE IR TODO EL FORMULARIO -->
                      <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="col-md-12 col-lg-6 col-sm-12">
                           <div class="white-box">
                             <div class="d-md-flex mb-3">
                                 <h3 class="box-title mb-0">Clientes</h3>
 
                                 <div class="container">
                                       
-                                      <form>
+                                      <form class="form" action="Controllers/create-customer.php" method="POST">
+                                        
                                         <div class="form-group">
-                                          <label for="ruc">RUC:</label>
-                                          <input type="text" class="form-control" id="ruc" placeholder="Ingresa tu RUC">
+                                          <label for="ruc">RUC: </label>
+                                          <input type="text" class="form-control" id="ruc" name="ruc">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                          <label for="name">Nombre: </label>
+                                          <input type="text" class="form-control" id="name" name="name">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                          <label for="direccion">Telefono:</label>
+                                          <input type="text" class="form-control" id="phone" name="phone">
                                         </div>
                                         <div class="form-group">
-                                          <label for="nombre">Nombre:</label>
-                                          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="direccion">Dirección:</label>
-                                          <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="telefono">Teléfono:</label>
-                                          <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                                          <label for="telefono">Teléfono Alt:</label>
+                                          <input type="text" class="form-control" id="phone1" name="phone1">
                                         </div>
                                         <div class="form-group">
                                           <label for="email">Email:</label>
-                                          <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                                          <input type="text" class="form-control" id="email" name="email">
                                         </div>
                                         <div class="form-group">
-                                          <label for="gerente">Gerente:</label>
-                                          <input type="text" class="form-control" id="gerente" placeholder="Ingresa el nombre del gerente">
+                                          <label for="email1">Email Alt:</label>
+                                          <input type="text" class="form-control" id="email1" name="email1">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="city_id">Ciudad:</label>
+                                          <input type="text" class="form-control" id="city_id" name="city_id">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="address">Dirección:</label>
+                                          <input type="text" class="form-control" id="address" name="address">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                          <label for="tipo_id">Tipo:</label>
+                                          <input type="text" class="form-control" id="tipo_id" name="tipo_id">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="ramo_id">Ramo:</label>
+                                          <input type="text" class="form-control" id="ramo_id" name="ramo_id">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="user">Agregado por:</label>
+                                          <input type="text" class="form-control" id="user_id" name="user_id">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="status">Estado:</label>
+                                          <input type="text" class="form-control" id="status" name="status">
                                         </div>
                                         <button type="submit" class="btn btn-success">Agregar</button>
                                         <button type="submit" class="btn btn-primary">Editar</button>
@@ -80,12 +110,8 @@ require 'Views/sideBar.php';
                             </div>
                           </div>
                       </div>
-                    </div>
-
-                    <!-- FIN DEL FORMULARIO -->
-
-                    <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
+                      
+                      <div class="col-md-12 col-lg-6 col-sm-12">
                         <div class="white-box">
                             <div class="d-md-flex mb-3">
                                 <h3 class="box-title mb-0">Clientes Recientes</h3>
@@ -165,7 +191,12 @@ require 'Views/sideBar.php';
                             </div>
                         </div>
                     </div>
-                </div>
+                     
+                    </div>
+
+                    <!-- FIN DEL FORMULARIO -->
+
+                    
 
                     <!-- AQUI TERMINA -->
             </div>
