@@ -111,11 +111,11 @@ require 'Views/sideBar.php';
                       <div class="col-md-12 col-lg-6 col-sm-12">
                         <div class="white-box">
                             <div class="d-md-flex mb-3">
-                                <h3 class="box-title mb-0">Clientes Recientes</h3>
+                                <h3 class="box-title mb-0">Clientes Inactivos</h3>
                                 <?php 
                                 $conexion = mysqli_connect("192.168.0.10", "root", "kakokeko", "rbpy");
 
-                                $sql = "SELECT * FROM rb_clientes";
+                                $sql = "SELECT * FROM rb_clientes WHERE estado='Inactivo'";
 
                                 $result = $conexion->query($sql);
 
@@ -132,13 +132,14 @@ require 'Views/sideBar.php';
                                     </thead>
                                     <tbody>
                                         <?php
-                                            while ($row = mysqli_fetch_array($result)) {
+                                            while ($_GET = mysqli_fetch_array($result)) {
                                                 echo "<tr>";
-                                                echo "<td>" . $row['ruc'] . "</td>";
-                                                echo "<td>" . $row['name'] . "</td>";
-                                                echo "<td>" . $row['estado'] . "</td>";
+                                                echo "<td>" . $_GET['ruc'] . "</td>";
+                                                echo "<td>" . $_GET['name'] . "</td>";
+                                                echo "<td>" . $_GET['estado'] . "</td>";
                                                 echo "</tr>";
                                             }
+                                            mysqli_close($conexion);
                                         ?>
 
 
